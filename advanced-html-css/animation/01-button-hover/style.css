@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 #transition-container {
   width: 100vw;
   height: 100vh;
@@ -16,4 +20,11 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  transition: transform 280ms;
+  will-change: transform;
+}
+
+button:hover {
+  transform: scale(1.15);
+  cursor: pointer;
 }
