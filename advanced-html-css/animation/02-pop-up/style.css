@@ -58,6 +58,26 @@ button {
   pointer-events: all;
 }
 
+.slide-in {
+  animation: slide 400ms ease-out;
+}
+
+.slide-out {
+  animation: slide 400ms reverse ease-in;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0%;
+    transform: translate(-50%, -250%);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .backdrop.show {
   opacity: 30%;
 }
